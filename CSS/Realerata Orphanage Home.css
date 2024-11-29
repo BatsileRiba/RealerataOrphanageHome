@@ -1,0 +1,710 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color:white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+    padding: 10px 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    height: fit-content;
+  }
+
+  .navigation img {
+    width: 130px; 
+    height: 130px;
+  }
+
+  .navigation ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1; 
+    justify-content: right; 
+    
+  }
+
+  .navigation ul li {
+    margin: 0 60px; 
+  }
+
+  .navigation ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  .navigation .button-link {
+    padding: 10px 20px;
+    background-color: #ff5722;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-right: 30px;
+  }
+
+  .hero {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 70vh;       
+    background-color: white;
+    padding-top: 0;
+  }
+  
+  
+  .heroContainer {
+    text-align: center;      
+    max-width: 600px;      
+    padding-top: 0px;
+    margin-top: 0px;
+  }
+  
+  .hero p {
+    font-size:large;
+  }
+
+  .hero img {
+    border-radius: 10px;
+  }
+
+  .aboutUs {
+    background-color: #ff5722; 
+    border-radius: 15px;
+    padding: 20px;
+    width: 1000px; 
+    margin: 50px auto; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    height: 400px;
+  }
+
+  .aboutUs h2 {
+    font-size: 2rem;
+    color: white;
+    flex: 1;
+    text-align: left;
+    margin-left: 20px;
+  }
+
+  .aboutUs p {
+    font-size: 1rem;
+    color: white;
+    line-height: 1.6;
+    flex: 1;
+    margin-left: 20px;
+  }
+
+  .aboutUs img {
+    width: 430px;
+    height: 300px;
+    border-radius: 15px;
+    flex: 1;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .testimonials {
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto; 
+    padding: 20px;
+    border: 2px solid rgb(40, 155, 40);
+    border-radius: 15px;
+    background-color: transparent; 
+    margin-bottom: 15px;
+  }
+
+  .testimonials .testimonial {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    width: 30%;
+  }
+  
+  .testimonialsGroup {
+    display: flex;  
+    flex-direction: row;  
+    justify-content: space-between;  
+    align-items: flex-start; 
+    gap: 20px;
+}
+  
+.testimonial img {
+    border-radius: 10px;
+  }
+
+  .testimonial p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    
+  }
+  
+  .testimonial h4 {
+    font-size: 1.1rem;
+    color: #333;
+    margin-top: 5px;
+  }
+
+  .contactUs {
+    background-color: #f9f9f9; 
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto; 
+    margin-top: 70px;
+    margin-bottom: 70px;
+    border: 1px solid rgb(40, 155, 40); 
+
+}
+
+.contactUs h2 {
+    text-align: center;
+    color: #333; 
+    margin-bottom: 20px;
+}
+
+.contactUs form {
+    display: flex;
+    flex-direction: column; 
+}
+
+.contactUs ul {
+margin-left: 27px;
+}
+
+.contactUs input[type="text"],
+.contactUs input[type="email"],
+.contactUs textarea {
+    padding: 15px;
+    margin: 10px 0; 
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+    font-size: 16px; 
+}
+
+.contactUs textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.contactUs button {
+    padding: 15px;
+    margin-top: 10px;
+    background-color: #ff5722; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s; 
+}
+
+.contactUs button:hover {
+    background-color: #ffae96; 
+}
+
+.contactUs button:focus {
+    outline: none; 
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+}
+hr {
+    margin-bottom: 30px;
+    border: none; 
+    border-top: 3px dashed rgb(40, 155, 40); 
+    margin: 20px 0; 
+    width: 100%; 
+}
+
+footer {
+    background-color: #333;
+    color: white; 
+    padding: 40px 20px;
+    text-align: center; 
+}
+
+.footerCenter {
+    margin-bottom: 20px;
+}
+
+.footerCenter h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: rgb(40, 155, 40);
+}
+
+.footerCenter ul {
+    list-style-type: none; 
+    padding: 0;
+}
+
+.footerCenter li {
+    margin: 10px 0; 
+}
+
+.footerCenter a {
+    color: black; 
+    text-decoration: none; 
+    transition: color 0.3s;
+}
+
+.footerCenter a:hover {
+    color: #ff5722; 
+}
+
+.footerRight {
+    margin: 20px 0;
+}
+
+.footerRight .button-link {
+    display: inline-block; 
+    background-color: rgb(40, 155, 40); 
+    color: white; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    text-decoration: none; 
+    font-size: 16px; 
+    transition: background-color 0.3s; 
+}
+
+.footerRight .button-link:hover {
+    background-color: rgb(40, 155, 40);
+}
+
+footer p {
+    margin-top: 20px; 
+    font-size: 14px;
+    color: #ccc; 
+}
+
+.footerContent {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.aboutUsPage {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white; 
+    border-radius: 10px;
+    border: 2px solid rgb(40, 155, 40);
+    margin-bottom: 70px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+    
+}
+
+.aboutUsPage h2 {
+    color:white ;
+    background-color: rgb(40, 155, 40);
+    display: inline-block;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 5px;
+    margin-left: 10px;
+   
+}
+
+.aboutUsPage p {
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 15px 20px; 
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.aboutUsPage img {
+    margin-bottom: 15px;
+    margin-left: 100px;
+    border-radius: 10px;
+    
+}
+
+.aboutUsPage ul {
+    margin-top: 10px;
+    margin-left: 45px;
+    margin-bottom: 15px;    
+}
+
+.aboutUsPage h1 {
+    margin-left: 70px;
+    margin-top: 20px;
+    
+}
+
+.SuccessStories {                     
+    flex-direction: row;              
+    align-items: center;                
+                        
+    text-align: center;                  
+}
+
+.successGroup {
+    display: flex;                       
+    flex-direction: column;              
+    align-items: center;                 
+    background-color:white ;          
+    border: 2px dashed #ff5722;              
+    border-radius: 10px;                 
+    padding: 15px;                      
+    margin: 15px 0;                    
+    width: 300px;                       
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    height: fit-content;
+}
+
+.successGroup img {
+    max-width: 100%;                     
+    height: auto;                       
+    border-radius: 8px;               
+}
+
+.successGroup p {
+    margin-top: 10px; 
+    color: black;                  
+}
+
+.successGrid {
+    display: grid;                          
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;                              
+    justify-items: center;                  
+    margin-top: 50px;   
+    margin-bottom: 90px;                    
+}
+
+.text h1 {
+    margin-left: 640px;
+}
+
+.text h3 {
+    margin-left: 560px;
+}
+
+.Volunteering {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: white; 
+  border-radius: 10px; 
+}
+
+.volunteeringText {
+  flex-basis: 50%; 
+  padding-right: 20px; 
+}
+
+.Volunteering h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 15px;
+  margin-left: 215px;
+}
+
+.Volunteering img {
+  display: block;
+  margin-top: 10px;
+  border-radius: 8px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  height: auto;
+  margin-left: 270px;
+  border: 2px solid rgb(40, 155, 40);
+}
+
+.contactRight {
+  flex-basis: 40%; 
+  margin-right: 100px;
+}
+
+.contactUstwo {
+  display: flex;
+  flex-direction: column;
+  gap: 30px; 
+  margin-right: 200px;
+  
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+}
+
+textarea {
+  resize: vertical; 
+  height: 100px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #ff5722; 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ffae96; 
+}
+
+
+@media (max-width: 960px) {
+  .Volunteering {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .volunteeringText, .contactRight {
+      flex-basis: 100%; 
+      padding-right: 0;
+  }
+
+  .contactRight {
+      margin-top: 20px;
+  }
+}
+
+
+.address {
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+  background-color: #f4f4f4; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-left: 50px;
+  margin-right: 50px;
+  border: 2px dashed rgb(40, 155, 40);
+  border-left: 5px solid rgb(40, 155, 40);
+
+}
+
+
+.Donations .address h2 {
+  font-size: 24px;
+  color: #333; 
+  margin-bottom: 10px;
+}
+
+address {
+  font-style: normal; 
+  line-height: 1.6; 
+  color: #555;
+  font-size: 18px;
+  
+}
+
+address strong {
+  font-size: 20px;
+  color: #333; 
+}
+
+.bankingDetails {
+  background-color: #fff5e1; 
+  margin-left: 50px;
+  margin-right: 50px;
+  border-radius: 10px;
+  border: 2px dashed #ff5722;
+  border-left: 5px solid #ff5722; 
+}
+
+.bankingDetails h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+  margin-left: 30px;
+}
+
+.bankingDetails h3 {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 5px;
+  margin-left: 30px;
+}
+
+.bankingDetails ul {
+  list-style-type: none; 
+  padding: 0;
+  margin: 0;
+  margin-left: 15px;
+}
+
+.bankingDetails ul li {
+  font-size: 18px;
+  color: #555;
+  padding: 5px 0;
+  margin-left: 15px;
+}
+
+@media (max-width: 960px) {
+  .navigation {
+      margin-left: 1px;
+      margin-right: 10px;
+      width: 80%;
+      font-size: 0.85rem;
+      
+  }
+
+  .navigation img {
+      width: 100px; 
+      height: 100px;
+  }
+
+  .navigation ul li {
+      margin: 0 20px; 
+      padding-right: 0;
+      font-size: smaller;
+      margin-left: 10px;
+      
+  }
+
+  .hero {
+      height: 50vh; 
+      margin-top:  50px;
+  }
+
+  .heroContainer {
+      max-width: 90%; 
+      padding: 0 10px;
+  }
+
+.hero img {
+  width: 300px;
+  height: 200px;
+}
+
+  .aboutUs {
+      width: 90%; 
+      height: auto; 
+      margin: 30px auto; 
+      flex-direction: column; 
+      margin-top: 50px;
+  }
+
+  .aboutUs img {
+    width: 300px;
+  }
+
+  .aboutUsPage img {
+      margin-left: 2px;
+      padding-left: 3px;
+  }
+
+  .testimonialsGroup {
+      flex-direction: column; 
+      align-items: center; 
+  
+  }
+
+  .testimonialsGroup p {
+    font-size: medium;
+    width: 250px;
+    line-height: normal;
+  }
+
+  .testimonial {
+      width: 50%; 
+  }
+  .testimonials {
+    width: 70%;
+  }
+
+  .contactUs {
+      padding: 20px;
+      max-width: 90%; 
+      margin: 20px auto; 
+  }
+
+  .contactUs input[type="text"],
+  .contactUs input[type="email"],
+  .contactUs textarea {
+      font-size: 14px; 
+  }
+
+  .contactUs button {
+      font-size: 14px;
+  }
+
+  .aboutUsPage {
+      padding: 15px; 
+      max-width: 95%; 
+  }
+
+  .aboutUsPage img {
+      width: 100%; 
+      height: auto;
+  }
+
+  .footer {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .successGrid {
+    grid-template-columns: 1fr;
+    margin-left: 30px;
+  }
+
+  .successGroup p {
+    font-size: 0.9rem;
+  }
+
+  .SuccesStories .text h3 {
+    font-size: 1.1rem;
+    margin-left: 30px;
+  }
+
+  .SuccesStories .text h1 {
+    font-size: 1.8rem;
+    margin-left: 30px;
+  }
+
+  .Volunteering img {
+    margin-left:90px;
+    padding: 0;
+  }
+  
+.contactUstwo {
+  margin-right:0;
+  margin-left: 90px;
+}
+ 
+.Volunteering h2 {
+  margin-left: 40px;
+} 
+
+.navigation ul li a {
+  font-size: smaller;
+  white-space:nowrap ;
+}
+}
+
+iframe {
+  margin-left: 29%;
+}

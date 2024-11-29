@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realerata Orphanage Home</title>
+    <link rel="icon" href="../Assets/favicon.ico">
+    <link rel="stylesheet" href="../CSS/Realerata%20Orphanage%20Home.css">
+    <meta name="description" content="Join Realerata in creating family bonds through adoption. Learn more about our process and how we connect children with loving families.">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navigation">
+    <img src="../Assets/Realerata%20orphanage%20home%20logo.png" alt="Realerata Logo" width="130" height="130">
+    <ul>
+      <li><a href="../HTML/Realerata%20About%20Us.html">About Us</a></li>
+      <li><a href="../HTML/Realerata%20Contact%20Us.html">Contact Us</a></li>
+      <li><a href="../HTML/Realerata%20Success%20Stories.html">Success Stories</a></li>
+    </ul>
+    <a href="../HTML/Realerata%20Donations%20and%20Volunteering.html" class="button-link">Donate</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="heroContainer">
+        <h1>REALERATA ORPHANAGE HOME</h1>
+        <br>
+        <p>Having no parent does not mean you cannot have a family. Let us love you. You deserve it, just like everybody else.</p>
+        <br>
+        <img src="../Assets/Five%20kids%20smiling.jpg" alt="Five kids smiling" width="430" height="300" id="greyscaleImage">
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section class="aboutUs">
+    <div class="textContent">
+    <h2>About Us</h2>
+    <br>
+    <p>Founded in 2005, Realerata has been a home to over 150 loved children and adults. We take children off the streets and provide a supportive family environment where they can grow, learn, and thrive. We believe in discipline, equality, and providing every child with the chance to succeed. Our tutoring services and support ensure our children have the tools to attend top universities in South Africa.</p>
+    <br>
+    </div>
+    <img src="../Assets/Children%20eating.jpg" alt="A group of kids eating" width="430" height="300">
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials">
+    <h2>Testimonials</h2>
+    <br>
+    <h4>This is what our children and parents are saying...</h4>
+    <br>
+    <div class="testimonialsGroup">
+    <div class="testimonial">
+      <img src="../Assets/A%20family%20of%20three.jpg" alt="Family of three" height="200" width="150">
+      <br>
+      <p>We were able to adopt a well-brought-up child from Realerata. He's the best.</p>
+      <h4>Nancy</h4>
+    </div>
+
+    <div class="testimonial">
+      <img src="../Assets/A%20man%20who%20just%20graduated.jpg" alt="Man graduation picture" width="150" height="200">
+      <br>
+      <p>I am now a qualified neurosurgeon, thanks to Realerata. This is my family forever.</p>
+      <h4>Jason</h4>
+    </div>
+
+    <div class="testimonial">
+      <img src="../Assets/A%20man%20laying%20on%20the%20floor%20with%20a%20baby.jpg" alt="Man and baby laying on the floor" width="150" height="200">
+      <br>
+      <p>They gave me the best thing that could ever happen to me, my kid. I love him so much.</p>
+      <h4>Benson</h4>
+    </div>
+    </div>
+  </section>
+
+  <!-- Contact Us Section -->
+  <section class="contactUs">
+    <h2>Contact Us</h2>
+    <form id="contactForm" action="mailto:batsileriba23@gmail.com" method="POST" enctype="text/plain">
+      <input type="text" name="name" placeholder="Name" onclick="clearField(this)">
+      <input type="text" name="surname" placeholder="Surname" onclick="clearField(this)">
+      <input type="email" name="email" placeholder="Enter Email" onclick="clearField(this)">
+      <textarea name="message" placeholder="Tell us more" onclick="clearField(this)"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+  
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScvdrcJxic5qbd8gVb_nl0SNoa4p0kbVkLEGanVuLlgjDhvEQ/viewform?embedded=true" width="640" height="544" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+  
+  <hr>
+
+  <!-- Footer Section -->
+  <section class="footer">
+    <div class="footerContent">
+      <div class="footerLeft">
+        <h2><b>Realerata</b></h2>
+      </div>
+      <div class="footerCenter">
+        <h3>Sitemap</h3>
+        <ul>
+          <li><a href="Realerata%20Homepage.html">Home</a></li>
+          <li><a href="Realerata%20About%20Us.html">About Us</a></li>
+          <li><a href="Realerata%20Contact%20Us.html">Contact Us</a></li>
+          <li><a href="Realerata%20Success%20Stories.html">Success Stories</a></li>
+          <li><a href="Realerata%20Donations%20and%20Volunteering.html">Donations and Volunteering</a></li>
+        </ul>
+      </div>
+      <div class="footerRight">
+        <a href="Realerata%20Donations%20and%20Volunteering.html" class="button-link">Donate</a>
+      </div>
+    </div>
+    <p>© <span id="currentYear"></span> Realerata. All rights reserved.</p>
+  </section>
+
+<script src="../JavaScript/Realerata.js"></script>
+</body>
+</html>
